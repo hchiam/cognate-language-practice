@@ -4,8 +4,8 @@ let prompt = document.getElementById('prompt');
 let input = document.getElementById('input');
 
 const url = 'https://cdn.jsdelivr.net/gh/hchiam/cognateLanguage@master/output_shortlist.txt'; //'https://raw.githubusercontent.com/hchiam/cognateLanguage/master/output_shortlist.txt';
-$.get(url, function(textData) {
-  data = textData.split('\n').filter((line) => line !== '');
+$.get(url, function(fileData) {
+  data = fileData.split('\n').filter((line) => line !== '');
   newPrompt();
 }, 'text');
 
