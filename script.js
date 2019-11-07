@@ -770,7 +770,7 @@ input.addEventListener('keyup', function checkAnswer(e) {
     location.reload();
   }
   
-  let inputValue = input.value;
+  let inputValue = input.value.toLowerCase();
   if (inputValue == '') {
     input.style.background = '';
   } else if (inputValue == answer) {
