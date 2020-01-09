@@ -1,0 +1,18 @@
+{
+  "short_name": "coglang-practice",
+  "name": "Cognate Language Practice",
+  "description": "Practice cognate language words",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#484848",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#484848",
+  "prefer_related_applications": false
+}
