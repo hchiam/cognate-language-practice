@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="minified-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="minified-script.js" defer></script>
+    <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('service-worker.js', {scope: ''})
+      }
+    </script>
+  </head>  
+  <body>
+    <p id="prompt"></p>
+    <input type="text" id="input" autofocus>
+    <button id="show-answer" onmouseover="showAnswer()" onmouseout="hideAnswer()">
+      Show answer
+    </button>
+    <button id="new-prompt" onclick="newPrompt()">
+      New prompt
+    </button>
+  </body>
+</html>
